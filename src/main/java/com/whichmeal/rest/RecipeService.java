@@ -1,6 +1,8 @@
 
 package com.whichmeal.rest;
 
+import javax.ejb.Stateless;
+
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
@@ -21,6 +23,7 @@ import ch.bfh.whichmeal.Recipe;
  */
 @Path("json/recipe")
 @Produces("Application/json")
+@Stateless
 public class RecipeService{
     @PersistenceContext(unitName="whichmeal")
     EntityManager em;
