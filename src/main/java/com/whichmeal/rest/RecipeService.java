@@ -2,9 +2,12 @@
 package com.whichmeal.rest;
 
 import javax.ejb.Stateless;
+import java.util.List;
+import java.util.ArrayList;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
 
 import javax.ws.rs.Path;
 import javax.ws.rs.Consumes;
@@ -33,6 +36,18 @@ public class RecipeService{
     public Recipe byId(@PathParam("id") final int id) {
         Recipe recipe = em.find(Recipe.class, id);
         return recipe;
+    }
+    
+    @GET
+    @Path("by_keyword/{keyword}")
+    public List<RecipeSummary> byKeyword(@PathParam("keyword") final String keyword){
+        Query query = em.createQuery("from Recipe r where upper(r.name) like upper(keyword)");
+        List<RecipeSummary> result = new ArrayList<RecipeSummary>();
+        List<Recipe> recipes = query.getResultList();
+        for (Recipe recipe : recipes){
+            result.add(new RecipeSummary(recipe.getId(), recipe.getName()));
+        }
+        return result;
     }
     
     @POST
