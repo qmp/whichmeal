@@ -26,9 +26,6 @@ public class RecipeService{
     @GET
     @Path("by_id/{id}")
     public Recipe byId(@PathParam("id") final int id) {
-        if (em == null)
-                return null;
-        
         Recipe recipe = em.find(Recipe.class, id);
         return recipe;
     }
