@@ -7,6 +7,7 @@ import java.io.Serializable;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Basic;
@@ -32,7 +33,7 @@ public class Recipe implements Serializable{
     // instructions
     @Basic
     private String recipe;
-    @ElementCollection
+    @ElementCollection(fetch=FetchType.EAGER)
     private List<String> lstIngredients = new ArrayList<String>();
     
     public Recipe(){}
