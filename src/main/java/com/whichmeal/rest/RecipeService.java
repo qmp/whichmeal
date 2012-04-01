@@ -22,7 +22,7 @@ import ch.bfh.whichmeal.Recipe;
 @Path("json/recipe")
 @Produces("Application/json")
 public class RecipeService{
-    EntityManager em;
+    private EntityManager em;
     
     @GET
     @Path("by_id/{id}")
