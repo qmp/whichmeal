@@ -10,9 +10,13 @@ public class Recipe {
     
     private int id;
     private String name;
+    // short description
     private String description;
+    // instructions
     private String recipe;
     private ArrayList<String> lstIngredients = new ArrayList<String>();
+    
+    public Recipe(){}
 
     public Recipe(ArrayList<String> lstIngredients, String recipe)
     {
@@ -38,6 +42,10 @@ public class Recipe {
 
     public String getName() {
         return name;
+    }
+    
+    public void setName(String name) {
+        this.name = name;
     }
     
     @Override
