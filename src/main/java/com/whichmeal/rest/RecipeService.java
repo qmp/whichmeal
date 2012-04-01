@@ -27,7 +27,7 @@ public class RecipeService{
     @GET
     @Path("by_id/{id}")
     public Recipe byId(@PathParam("id") final int id) {
-        Recipe recipe = em.find(Recipe.class, id);
+        Recipe recipe = getEm().find(Recipe.class, id);
         return recipe;
     }
     
@@ -35,8 +35,8 @@ public class RecipeService{
     @Path("/add")
     @Consumes("Application/json")
     public Response add(Recipe recipe){
-        em.persist(recipe);
-        em.flush();
+        getEm().persist(recipe);
+        getEm().flush();
         String result = "Recipe added : " + recipe;
         return Response.status(201).entity(result).build();
     }
