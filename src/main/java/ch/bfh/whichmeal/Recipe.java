@@ -1,6 +1,7 @@
 package ch.bfh.whichmeal;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import java.io.Serializable;
 
@@ -32,7 +33,7 @@ public class Recipe implements Serializable{
     @Basic
     private String recipe;
     @ElementCollection
-    private ArrayList<String> lstIngredients = new ArrayList<String>();
+    private List<String> lstIngredients = new ArrayList<String>();
     
     public Recipe(){}
 
@@ -42,7 +43,7 @@ public class Recipe implements Serializable{
         this.recipe = recipe;
     }
 
-    public ArrayList<String> getLstIngredients() {
+    public List<String> getLstIngredients() {
         return lstIngredients;
     }
     
