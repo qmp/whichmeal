@@ -33,6 +33,7 @@ public class Recipe implements Serializable{
     // instructions
     @Basic
     private String recipe;
+    //TODO : use lazy loading
     @ElementCollection(fetch=FetchType.EAGER)
     private List<String> lstIngredients = new ArrayList<String>();
     
