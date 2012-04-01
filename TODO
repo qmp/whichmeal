@@ -1,2 +1,3 @@
 Use EJB sessions and transactions, lazy loading
+Map RecipeSummary on the same table as recipe
 Authentication for delete and add operations
