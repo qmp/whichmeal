@@ -52,6 +52,16 @@ public class RecipeService{
         return result;
     }
     
+    @GET
+    @Path("delete/{id}")
+    public Recipe delete(@PathParam("id") final int id){
+        Recipe recipe = em.find(Recipe.class, id);
+        if (recipe != null){
+            em.remove(recipe);
+        }
+        return recipe;
+    }
+    
     @POST
     @Path("/add")
     @Consumes("Application/json")
