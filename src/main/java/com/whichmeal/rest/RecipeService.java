@@ -2,7 +2,7 @@
 package com.whichmeal.rest;
 
 import javax.persistence.EntityManager;
-import javax.persistence.Persistence;
+import javax.persistence.PersistenceContext;
 
 import javax.ws.rs.Path;
 import javax.ws.rs.Consumes;
@@ -22,12 +22,13 @@ import ch.bfh.whichmeal.Recipe;
 @Path("json/recipe")
 @Produces("Application/json")
 public class RecipeService{
-    private EntityManager em;
+    @PersistenceContext(unitName="whichmeal")
+    EntityManager em;
     
     @GET
     @Path("by_id/{id}")
     public Recipe byId(@PathParam("id") final int id) {
-        Recipe recipe = getEm().find(Recipe.class, id);
+        Recipe recipe = em.find(Recipe.class, id);
         return recipe;
     }
     
@@ -35,17 +36,9 @@ public class RecipeService{
     @Path("/add")
     @Consumes("Application/json")
     public Response add(Recipe recipe){
-        getEm().persist(recipe);
-        getEm().flush();
+        em.persist(recipe);
+        em.flush();
         String result = "Recipe added : " + recipe;
         return Response.status(201).entity(result).build();
-    }
-    
-    private EntityManager getEm(){
-        if (this.em != null){
-            return em;
-        }
-        em = Persistence.createEntityManagerFactory("whichmeal").createEntityManager();
-        return em;
     }
 }
