@@ -41,7 +41,7 @@ public class RecipeService{
     @GET
     @Path("by_keyword/{keyword}")
     public List<RecipeSummary> byKeyword(@PathParam("keyword") final String keyword){
-        Query query = em.createQuery("from Recipe r where upper(r.name) like upper(:keyword)");
+        Query query = em.createQuery("from Recipe r where upper(r.name) like '%upper(:keyword)%'");
         query.setParameter("keyword", keyword);
         List<RecipeSummary> result = new ArrayList<RecipeSummary>();
         List<Recipe> recipes = query.getResultList();
