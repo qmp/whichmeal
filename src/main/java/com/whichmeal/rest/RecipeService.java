@@ -62,6 +62,12 @@ public class RecipeService{
         return recipe;
     }
     
+    @GET
+    @Path("findall")
+    public List<RecipeSummary> findAll() {
+        return byKeyword("");
+    }
+
     @POST
     @Path("/add")
     @Consumes("Application/json")
