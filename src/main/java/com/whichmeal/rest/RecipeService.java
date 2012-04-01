@@ -24,7 +24,6 @@ import ch.bfh.whichmeal.Recipe;
 public class RecipeService{
     @PersistenceContext(unitName="whichmeal")
     EntityManager em;
-    String name;
     
     @GET
     @Path("by_id/{id}")
