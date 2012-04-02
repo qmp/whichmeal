@@ -1,3 +1,6 @@
 Use EJB sessions and transactions, lazy loading
 Map RecipeSummary on the same table as recipe, read only
 Authentication for delete and add operations
+Cursors for large responses
+Error response
+Internationalization
