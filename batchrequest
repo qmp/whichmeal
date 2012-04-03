@@ -1,0 +1,44 @@
+[
+	{
+		"name":"Rabbit Fricassee",
+		"id":0,
+		"description":"A fricassee is a creamy dish often made at home with white meat (usually a whole chicken cut into eight pieces), vegetables, and a dense white sauce. Rabbit meat can be substituted for chicken for a similar flavor, as has been done in this recipe.",
+		"lstIngredients":
+		[
+			"1 whole rabbit",
+			"50g, 1.7 oz butter",
+			"2 tablespoons vegetable oil",
+			"2 teaspoon floor",
+			"100g, 3.5oz bacon, chopped",
+			"100g, 3.5 oz button mushrooms, cut into quarters",
+			"4 shallots, cut in half",
+			"4 celery sticks, diced",
+			"2 carrots, diced",
+			"250ml, 8.4 fl oz white wine",
+			"750ml, 25.3 fl oz chicken stock",
+			"2 garlic cloves, chopped",
+			"4 sprigs of fresh thyme",
+			"2 bay leaves",
+			"50ml, 1.7 fl oz cream",
+			"Salt and pepper for seasoning"
+		],
+		"recipe":"1. Divide the rabbit into 8 pieces. (You can ask your butcher to do this for you). \nIf you're concerned about the rabbit's tenderness, marinate the rabbit for one night in the pot first, and when you cook the rabbit, make sure that the heat isn't that high; this way the rabbit will definitely become softer and tastier.\n2. Season all the pieces of rabbit with salt and pepper, then lightly cover them in flour.\n3. Start heating the oil and the butter in the pan and then add the rabbit. Lightly cook over a moderate heat until golden brown.\n4. When light brown, remove the rabbit from the pan and leave to one side.\n5. Brown the bacon, then add the mushrooms, the shallots, the diced celery and the diced carrot and cook until slightly brown.\n6. Pour in the white wine and reduce it down to about half.\n7. Once the wine has reduced, put the rabbit back into the pot.\n8. While continuously stirring, add the stock to the pan.\n9. Finally, before cooking the dish thoroughly, add the garlic, bay leaves and thyme. Stir.\n10. Bring the stock to a gentle simmer, then skim off any scum that may have risen to the surface. Cover, lower the heat and cook, simmering for 1 hour.\n11. Spoon out the rabbit and the vegetables and place them onto a serving dish.\n12. For a delicious finishing touch, pour the cream into the sauce and reduce it down by about half. Here, also adjust the seasoning if necessary.\n13. Add some chopped parsley to the sauce, pour it over the rabbit and vegetables and serve immediately.\n Source : http://www.wikihow.com/Make-Rabbit-Fricassee"
+	},
+	{
+		"name":"Apple Cinnamon Popcorn",
+		"id":0,
+		"description":"The flavor of apple and cinnamon together is always a delight. Added to popcorn, it's a sure hit with everyone who enjoys popcorn.",
+		"lstIngredients":
+		[
+			"2 cups dried apples, chopped",
+			"10 cups popcorn, freshly popped",
+			"2 cups pecan halves",
+			"4 tablespoons butter, melted",
+			"1 teaspoon cinnamon",
+			"1/4 teaspoon nutmeg",
+			"2 tablespoons brown sugar",
+			"1/4 teaspoon vanilla extract (essence)"
+		],
+		"recipe":"1. Preheat the oven to 250ºF/ 121ºC.\n2. Sprinkle the dried apples across the base of the baking pan. Place in the preheated oven and bake for 20 minutes.\n3. Remove the baked dried apples from the oven. Add the pecan halves and the popcorn to the pan. Stir to combine all ingredients.\n4. Pour the melted butter into the bowl. Add the spices, sugar and vanilla. Stir together well.\n5. Pour the butter mixture over the popcorn mixture. Mix through thoroughly.\n6. Return the baking pan to the oven at the same temperature. Bake for another 30 minutes but be sure to give it a stir every 10 minutes or so.\n7. While the popcorn is baking, place a sheet of wax paper over a wire cooling rack.\n8. Remove from the oven. Tip the baked popcorn over the covered wire cooling rack to cool.\n9. Serve the popcorn once cooled. Alternatively, serve it slightly warm still. Either way, it's delicious.\n Source : http://www.wikihow.com/Make-Apple-Cinnamon-Popcorn"
+	}
+]
