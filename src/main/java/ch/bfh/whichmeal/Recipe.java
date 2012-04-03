@@ -11,6 +11,7 @@ import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Basic;
+import javax.persistence.Lob;
 import javax.persistence.Column;
 import javax.persistence.ElementCollection;
 
@@ -28,10 +29,10 @@ public class Recipe implements Serializable{
     @Column(nullable=false)
     private String name;
     // short description
-    @Basic
+    @Basic @Lob
     private String description;
     // instructions
-    @Basic
+    @Basic @Lob
     private String recipe;
     //TODO : use lazy loading
     @ElementCollection(fetch=FetchType.EAGER)
