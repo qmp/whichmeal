@@ -77,4 +77,16 @@ public class RecipeService{
         String result = "Recipe added : " + recipe;
         return Response.status(201).entity(result).build();
     }
+    
+    @POST
+    @Path("batchadd")
+    @Consumes("Application/json")
+    public Response batchAdd(List<Recipe> recipes){
+        for (Recipe recipe : recipes){
+            em.persist(recipe);
+        }
+        em.flush();
+        String result = "" + recipes.size() + " recipes added";
+        return Response.status(201).entity(result).build();
+    }
 }
